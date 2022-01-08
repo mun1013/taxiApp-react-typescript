@@ -55,7 +55,7 @@ const Home: React.FC = () => {
 
     const value = event.target.value;
     if (value === 'sg') {
-      setLocation(() => { return [91.285194, 103.8522982]} );
+      setLocation(() => { return [1.285194, 103.8522982]} );
     }
     else if (value === 'london') {
       setLocation(() => { return [51.5049375, -0.0964509]} );
