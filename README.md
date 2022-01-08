@@ -16,10 +16,21 @@ Typescript
 
 Install [Node](https://nodejs.org/en/) and make sure the Node version is 14 and above.
 
-Clone the project folder and the following step is required to install packages for the application:
+Clone the project folder and the following steps are required to install dependencies for both client and server:
+
+1. Install the dependencies for the server.
 
 ```bash
-npm install-all
+# navigate to the project folder and run the command below
+npm install
+```
+
+2. Install the dependencies for the client.
+
+```bash
+# navigate to the client folder and install the dependencies
+cd ./client
+npm install
 ```
 
 ## Usage
@@ -27,7 +38,8 @@ npm install-all
 Run the Taxi Application.
 
 ```bash
-# the react app runs on port 3000 while the node server is port 5000
+# the react app runs on port 3000 while the node server runs on port 5000
+# navigate back to the project folder with cd .. and run the command below
 npm run dev
 ```
 

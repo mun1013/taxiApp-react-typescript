@@ -1,4 +1,4 @@
-import Home from './component/Home';
+import Home from './component/Home/Home';
 import './App.css';
 import TaxiesContextProvider from './store/taxies-context';
 

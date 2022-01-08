@@ -17,14 +17,13 @@ router.get('/taxi/:latitude/:longitude/:count', (req, res) => {
   const url = 'https://qa-interview-test.splytech.dev/api/drivers';
 
   axios.get(url, {
-    params: { latitude, longitude, count}
+    params: { latitude, longitude, count }
   })
     .then((response) => {
-      // console.log('response',response.data.drivers)
       res.status(200).send(response.data.drivers);
     })
     .catch((error) => {
-      // console.log(error);
+      res.status(500).send(error);
     });
 });
 
