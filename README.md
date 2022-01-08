@@ -33,7 +33,7 @@ cd ./client
 npm install
 ```
 
-## Usage
+## How to use
 
 Run the Taxi Application.
 
