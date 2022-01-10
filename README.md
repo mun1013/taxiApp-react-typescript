@@ -52,6 +52,16 @@ It will redirect you to http://localhost:3000/.
 
 A script is configured named **test** for running Jest.
 
+1. Run the following command to test the API:
+
 ```bash
+npm run test
+```
+
+1. Navigate to the client folder and carry out the unit test.
+
+```bash
+# navigate to the client folder and install the dependencies
+cd ./client
 npm run test
 ```

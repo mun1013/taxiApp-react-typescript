@@ -1,21 +1,18 @@
-import React from 'react';
-import { fireEvent, render, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
-
+import { fireEvent, render } from '@testing-library/react';
 import Home from './Home';
 
 describe('Home Component', () => {
   test('It should allow to change the location', () => {
-    // render(<Home/>);
-
-    // const radioLabel = screen.getByRole('radio');
-    // expect(radioLabel).toEqual(false);
-    // fireEvent.click(radioLabel);
-    // expect(radioLabel).toEqual(true);
-
     const { getByLabelText } = render(<Home/>);
     const radio = getByLabelText('Singapore');
     fireEvent.change(radio, {target: {value: "sg"}});
-    expect(radio).toBe('sg');
+    expect((radio as HTMLInputElement).value).toEqual('sg');
+  });
+
+  test('It should allow to change the number of taxi using the slider', () => {
+    const { getByRole } = render(<Home/>);
+    const slider = getByRole('slider');
+    fireEvent.change(slider, {target: {value: "2"}});
+    expect((slider as HTMLInputElement).value).toEqual('2');
   })
 })
