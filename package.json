@@ -17,7 +17,7 @@
     "body-parser": "^1.19.1",
     "concurrently": "^7.0.0",
     "express": "^4.17.2",
-    "promise": "^8.1.0"
+    "promise": "^8.3.0"
   },
   "devDependencies": {
     "jest": "^27.4.7",
