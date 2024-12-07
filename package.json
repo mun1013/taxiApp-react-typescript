@@ -13,10 +13,10 @@
   "author": "kahmun",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.24.0",
+    "axios": "^1.7.8",
     "body-parser": "^1.19.1",
     "concurrently": "^7.0.0",
-    "express": "^4.17.2",
+    "express": "^4.21.2",
     "promise": "^8.1.0"
   },
   "devDependencies": {
